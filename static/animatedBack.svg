@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <!-- Customize the background color -->
+  <rect x="0" y="0" width="100%" height="100%" fill="black" />
+
+  <!-- Customize the raindrop characters -->
+  <g>
+    {#each Array.from({ length: 100 }) as _, i}
+      <text
+        x="{Math.random() * 800}"
+        y="{Math.random() * 600}"
+        font-family="Courier New, monospace"
+        font-size="16"
+        fill="#00ff00"
+        opacity="0.8"
+      >
+        {String.fromCharCode(33 + Math.floor(Math.random() * 94))}
+      </text>
+    {/each}
+  </g>
+</svg>
