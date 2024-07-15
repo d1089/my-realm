@@ -3,11 +3,12 @@ import UnoCSS from 'unocss/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
+	base: '/my-realm/',
 	plugins: [UnoCSS(), sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	},
-	server:{
+	server: {
 		port: 3000
 	}
 };
