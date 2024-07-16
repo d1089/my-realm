@@ -1,9 +1,11 @@
 {
-	"name": "portfolio-project",
+	"name": "my-realm-project",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -30,6 +32,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^6.1.1",
 		"marked-gfm-heading-id": "^3.1.2",
 		"marked-mangle": "^1.1.6",
 		"prettier": "^2.8.0",
